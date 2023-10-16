@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Calculator</title>
+</head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+  </style>
+<body>
+  <center>
+<h1 style="font-family: 'Montserrat', sans-serif;">Calculator</h1>
+<button id="addInput"><p style="font-family: 'Montserrat', sans-serif;">Addition</p></button>
+  <button id="subInput"><p style="font-family: 'Montserrat', sans-serif;">Subtraction</p></button>
+  <button id="mulInput"><p style="font-family: 'Montserrat', sans-serif;">Multiplication</p></button>
+    <button id="divInput"><p style="font-family: 'Montserrat', sans-serif;">Division</p></button>
+</center>
+  <p style="font-family: 'Montserrat', sans-serif;">By Finn Baltazar
+</p>
+  <script>
+    document.getElementById('addInput').addEventListener("click", function() {
+   const a = window.prompt('Enter the first number in your equation here:')
+   const b = window.prompt('Enter the second number in your equation here:')
+   const sum = Number(a) + Number(b)
+   window.alert(sum);
+});
+document.getElementById('subInput').addEventListener("click", function() {
+   const c = window.prompt('Enter the first number in your equation here:')
+   const d = window.prompt('Enter the first number in your equation here:')
+   const dif = c - d
+   window.alert(dif);
+});
+document.getElementById('mulInput').addEventListener("click", function() {
+   const e = window.prompt('Enter the first number in your equation here:')
+   const f = window.prompt('Enter the first number in your equation here:')
+   const pro = e * f
+   window.alert(pro);
+});
+document.getElementById('divInput').addEventListener("click", function() {
+   const g = window.prompt('Enter the first number in your equation here:')
+   const h = window.prompt('Enter the first number in your equation here:')
+   const quo = g - h
+   window.alert(quo);
+});
+  </script>
+</body>
+</html>
